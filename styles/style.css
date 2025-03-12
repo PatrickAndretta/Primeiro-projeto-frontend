@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --background-color: #1e1c1c;
+  --text-color: #D4D4D4;
+  --highlight-color: #537a5a;
+
+  --titles-font: "Krona One", sans-serif;
+  --text-font:  "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.header {
+  height: 29;
+  width: 299;
+  padding: 2% 0% 0% 10% ;
+}
+
+.header__menu {
+  width: 299px;
+  height: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu__btn {
+  font-family: var(--text-font);
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--highlight-color);
+  transition-duration: 500ms;
+}
+
+.header__menu__btn:hover {
+  color: var(--text-color);
+  transition-duration: 500ms;
+  transition-delay: 20ms;
+
+}
+
+.apresentacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 10% 14% 10%;
+  
+}
+
+.texto-verde {
+  color: var(--highlight-color);
+}
+
+.apresentacao__conteudo {
+ width: 655px ;
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+
+.apresentacao__conteudo__titulo {
+  font-size: 36px;
+  font-family: var(--titles-font);
+}
+
+.apresentacao__conteudo__texto {
+  font-size: 24px;
+  font-family: var(--text-font);
+}
+
+.apresentacao__conteudo__links {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.apresentacao__conteudo__links__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px, solid, var(--highlight-color);
+  border-radius: 8px;
+  height: 68px;
+  width: 378px;
+  padding: 16px 0;
+  font-size: 24px;
+  font-family: var(--text-font);
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-color);
+  gap: 16px;
+  transition-duration: 1s;
+}
+
+.apresentacao__conteudo__subtitle {
+  font-family: var(--titles-font);
+  font-weight: 400;
+}
+
+.apresentacao__conteudo__links__btn:hover {
+  background-color: var(--highlight-color);
+  transition-delay: 50ms;
+  transition-duration: 1.2s;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1E1C1C;
+  height: 80px;
+  background-color: var(--highlight-color);
+  font-family: var(--text-font);
+  font-size: 24px;
+}
